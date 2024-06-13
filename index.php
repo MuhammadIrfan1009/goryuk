@@ -33,7 +33,7 @@ if (isset($_POST["simpan"])) {
   <link rel="stylesheet" href="style.css">
   
   
-  <!-- Favicon --><link rel="icon" type="image/x-icon" href="assets/img/favicon/logo.png" />
+  <!-- Favicon -->   <link rel="icon" type="image/x-icon" href="img/logo.png"/>
   
 
   <!-- Fonts -->
@@ -160,7 +160,7 @@ if (isset($_POST["simpan"])) {
               <div class="col">
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Nama Lengkap</label>
-                  <input type="text" name="nama_lengkap" class="form-control" id="exampleInputPassword1" value="<?= $profil["nama_lengkap8"]; ?>">
+                  <input type="text" name="nama_lengkap" class="form-control" id="exampleInputPassword1" value="<?= $profil["nama_lengkap8"]; ?>" required>
                 </div>
                 <div class="mb-3">
                   <label for="jenis_kelamin" class="form-label">Jenis Kelamin</label>
@@ -177,7 +177,7 @@ if (isset($_POST["simpan"])) {
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Email</label>
-                  <input type="email" name="email" class="form-control" id="exampleInputPassword1" value="<?= $profil["email8"]; ?>">
+                  <input type="email" name="email" class="form-control" id="exampleInputPassword1" value="<?= $profil["email8"]; ?>" required>
                 </div>
               </div>
               <div class="mb-3">
@@ -186,7 +186,7 @@ if (isset($_POST["simpan"])) {
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Foto : </label>
-                <input type="file" name="foto" class="form-control" id="exampleInputPassword1">
+                <input type="file" name="foto" class="form-control" id="exampleInputPassword1" required>
               </div>
             </div>
           </div>

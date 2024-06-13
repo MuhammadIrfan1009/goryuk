@@ -7,7 +7,7 @@
   <meta name="description" content="" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="../assets/img/favicon/logo.png" />
+  <link rel="icon" type="image/x-icon" href="../img/logo.png"/>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css" />
   <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
   <link rel="stylesheet" href="../assets/css/demo.css" />
+  <link rel="stylesheet" href="../assets/vendor/css/dataTables.bootstrap5.min.css">
 
   <!-- Vendors CSS -->
   <link rel="stylesheet" href="../assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
@@ -32,7 +33,7 @@
 
   <!-- Template customizer & Theme config files -->
   <script src="../assets/js/config.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
+ 
   <style>
     .layout-menu {
       position: fixed;
@@ -106,6 +107,13 @@
           <a href="admin.php" class="menu-link">
             <i class="menu-icon tf-icons bx bx-user"></i>
             <div data-i18n="Data Admin">Data Admin</div>
+          </a>
+        </li>
+  
+        <li class="menu-item">
+          <a href="backstore.php" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-save"></i>
+            <div data-i18n="Data Pesanan">Backup/Restore</div>
           </a>
         </li>
 

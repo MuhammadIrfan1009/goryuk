@@ -4,14 +4,15 @@ $conn = mysqli_connect("localhost", "root", "", "dbgoryuk");
 
 function query($query)
 {
-  global $conn;
-  $result = mysqli_query($conn, $query);
-  $rows = [];
-  while ($row = mysqli_fetch_assoc($result)) {
-    $rows[] = $row;
+  global $conn; // Menggunakan variabel global $conn untuk koneksi database
+  $result = mysqli_query($conn, $query); // Menjalankan query SQL
+  $rows = []; // Menyiapkan array kosong untuk menyimpan hasil
+  while ($row = mysqli_fetch_assoc($result)) { // Mengambil setiap baris hasil sebagai array asosiatif
+    $rows[] = $row; // Menambahkan setiap baris hasil ke dalam array $rows
   }
-  return $rows;
+  return $rows; // Mengembalikan array hasil
 }
+
 
 function hapusMember($id) {
   global $conn;
@@ -161,6 +162,7 @@ function edit($data)
   $no_handphone = $data["hp"];
   $gender = $data["jenis_kelamin"];
   $gambar = $data["foto"];
+  $almt = $data["alamat"];
   $gambarLama = $data["fotoLama"];
  
   // Cek apakah User pilih gambar baru
@@ -174,6 +176,7 @@ function edit($data)
   nama_lengkap8 = '$nama',
   no_handphone8 = '$no_handphone',
   jenis_kelamin8 = '$gender',
+  alamat8 = '$almt',
   foto8 = '$gambar'
   WHERE id_user8 = '$userid'
   ";
@@ -235,9 +238,8 @@ function pesan($data)
 
         if ($last_id) {
             return true;
-        } else {
-            return "Error saat menyimpan data.";
-        } 
+        
+        }
     }
 }
 
@@ -254,6 +256,7 @@ function bayar($data)
         return false;
     }
 
+    //sp update
     // Update status konfirmasi menjadi Sudah Bayar dan masukkan bukti pembayaran
     $query = "CALL set_status_bayar($id_sewa, '$bukti_file')";
     $result = mysqli_query($conn, $query);

@@ -14,8 +14,8 @@ if (isset($_POST["daftar"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar &mdash; IdeKreatif</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico"/>
+    <title>Daftar &mdash; Goryuk</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="''/assets/vendor/fonts/boxicons.css"/>
     <link rel="stylesheet" href="../assets/vendor/css/core.css" class="template-customizer-core-css"/>
@@ -49,10 +49,10 @@ if (isset($_POST["daftar"])) {
                             </div>
                             <div class="mb-3 form-password-toggle">
                                 <div class="d-flex justify-content-between">
-                                    <label class="form-label">Password</label>
+                                    <label class="form-label" >Password</label>
                                 </div>
                                 <div class="input-group input-group-merge">
-                                    <input type="password" class="form-control" name="password" placeholder="••••••••" required/>
+                                    <input type="password" class="form-control" name="password" placeholder="••••••••"  minlength="8" required/>
                                     <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
                                 </div>
                             </div>

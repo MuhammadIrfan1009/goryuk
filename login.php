@@ -33,10 +33,11 @@ if (isset($_POST["login"])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login &mdash; IdeKreatif</title>
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico"/>
+    <title>Login &mdash; Goryuk</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="assets/vendor/fonts/boxicons.css"/>
     <link rel="stylesheet" href="assets/vendor/css/core.css" class="template-customizer-core-css"/>
@@ -47,6 +48,9 @@ if (isset($_POST["login"])) {
     <script src="assets/vendor/js/helpers.js"></script>
     <script src="assets/js/config.js"></script>
 </head>
+>
+</head>
+
 <body>
     <?php if ($loginError): ?>
     <div class="toast-container position-absolute p-3" style="top: 0; right: 0;">
