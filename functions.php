@@ -161,7 +161,6 @@ function edit($data)
   $nama = $data["nama_lengkap"];
   $no_handphone = $data["hp"];
   $gender = $data["jenis_kelamin"];
-  $gambar = $data["foto"];
   $almt = $data["alamat"];
   $gambarLama = $data["fotoLama"];
  
